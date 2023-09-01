@@ -1,12 +1,4 @@
 
-print()
-print("-"*50)
-
-print("\n                 X Y Z     A G E N C Y             ")
-
-print()
-print("-"*50)
-
 while True:
     a=input("Enter Username: ")
     if a=="admin":
