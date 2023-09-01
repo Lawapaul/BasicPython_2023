@@ -1,4 +1,4 @@
-"""Hello Everyone! Welcome to my github page. Hope you will find it interesting as I am newbie. 
+"""Hello Everyone! Welcome to my github page. Hope you will find it interesting as I am a newbie. 
 My first mini project was to create python programme which helps to calculate disconted Mrp for 
 a cloth store. It helps the customer to calculate without any hard efforts.
 """
