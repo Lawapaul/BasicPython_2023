@@ -9,6 +9,19 @@ while True:
                Start writing your code from here.......
             """
             
+        
+        else:
+            print("Wrong Passcode")  
+            print("\nDo you wish to continue (y/n): ") 
+            voi=input()
+            if voi=='n' or voi=='N':
+              print("Thankyou!,Have a great day :) ") 
+              break
+            else:
+              continue
+             
+        
+            
             
             
     else:
@@ -21,7 +34,6 @@ while True:
             break
         else:
             continue
-        
         
           
     
