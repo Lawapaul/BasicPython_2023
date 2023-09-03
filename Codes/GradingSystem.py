@@ -1,12 +1,14 @@
-a=int(input("Enter Attendence Percentage: "))
-b1=int(input("Enter Marks in Test1: "))
-b2=int(input("Enter Marks in Test2: "))
-b3=int(input("Enter Marks in Test3: "))
 
-bmw=(b1+b2+b3)/3
 
-def main()
- if a>=90:
+
+
+def main(): 
+ abd=int(input("Enter attendance percentage: "))
+ b1=int(input("Enter Marks in Test1: "))
+ b2=int(input("Enter Marks in Test2: "))
+ b3=int(input("Enter Marks in Test3: "))
+ bmw=(b1+b2+b3)/3
+ if abd>=90:
      xyz=(b1+b2+b3+5)/3
      if xyz>=90:
          print("Final Grade: A (5 Marks Extra of Attendance)")
@@ -20,23 +22,25 @@ def main()
          print("Final Grade: F (5 Marks Extra for Attendance)")
 
  else:
-     if bmw>=90:
+     mno=(b1+b2+b3)/3
+     if mno>=90:
          print("Final Grade: A")
-     elif bmw>=80 and bmw<=89:
+     elif mno>=80 and mno<=89:
          print("Final Grade: B")
-     elif bmw>=70 and bmw<=79:
+     elif mno>=70 and mno<=79:
          print("Final Grade: C")
-     elif bmw>=60 and bmw<=69:
+     elif mno>=60 and mno<=69:
          print("Final Grade: D")
-     elif bmw<60:
+     elif mno<60:
          print("Final Grade: F")
   
 
 main()
 
 while True:
-    a=int(input("Do you wish to continue (y/n): "))
+    a=input("Do you wish to continue (y/n): ")
     if a=='y' or a=='Y':
-        print(main)
+        main()
     else:
         print("Thankyou! Have a great day :) ")
+        break
