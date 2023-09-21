@@ -9,4 +9,4 @@ their contact in a dictionary which helps them to find it whenver they are in ne
 
 ---------------------------------
 
-**I am Begineer and uploading it for my concern. Do it entertain it has a final executable programe*****
+**I am Begineer and uploading it for my concern. Do not entertain it has a final executable programe**
