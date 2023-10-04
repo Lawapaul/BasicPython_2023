@@ -4,6 +4,49 @@ drinks = [{"type": "water","calories": 0,"number_consumed": 7,"caffeinated": Fal
     { "type": "cappuccino", "calories": 350,"number_consumed": 2,"caffeinated": True},
     {"type": "hot tea","calories": 5,"number_consumed": 3, "caffeinated": True}]
 
-for i in drinks():
-    print(i)
+"""Exercise 1: How many different kinds of drinks are represented?
+Exercise 2: How many total consumed drinks?
+Exercise 3: How many total consumed calories?
+Exercise 4: How many types of drinks are caffeinated?
+Exercise 5: How many total consumed drinks were non-caffeinated?
+Exercise 6: What is the drink with the highest amount of calories per drink?
+Exercise 7: Which drink was consumed the least? (has the lowest number_consumed)
+Exercise 8: If we consume all of these beverages, what is the average calorie count per drink?"""
+
+print("Types:",len(drinks))
+
+count=0
+for i in range(len(drinks)):
+    count=count+drinks[i]['number_consumed']
+
+print("Total consumed: ",count)
+
+coun=0
+for i in range(len(drinks)):
+    coun+=drinks[i]['calories']
+print("Total Calories:",coun)
+
+cou=0
+co=0
+for i in range(len(drinks)):
+    if drinks[i]['caffeinated']==True:
+        cou=cou+1
+    elif drinks[i]['caffeinated']==False:
+        co=co+1
+
+print("Caffeinated Drinks are:",cou)
+print("Non Caffeinated Drinks are:",co)
+
+lst=[]
+lst2=[]
+for i in range(len(drinks)):
+    c=(drinks[i]['calories'])
+    d=(drinks[i]["number_consumed"])
+    lst.append(c)
+    lst2.append(d)
     
+
+print("Maximum calorie drink:",max(lst))
+print("Least consumed drink:",min(lst2))
+print("Average Calories:",coun/len(drinks))
+
