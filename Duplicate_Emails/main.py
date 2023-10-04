@@ -1,7 +1,7 @@
 a=int(input("Enter Range: "))
 lst=[]
 for i in range(a):
-    b=int(input("Enter Number: "))
+    b=int(input(f"Enter Email-ID {i+1}: "))
     lst.append(b)
 
 lst1=[]
