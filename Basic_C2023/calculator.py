@@ -1,3 +1,5 @@
+import math
+
 print("")
 print("")
 
@@ -19,6 +21,8 @@ def main(a,b):
     print("2. Subtraction")
     print("3. Multiplication")
     print("4. Division")
+    print("5. Trignometric Functions")
+    print("6. Exit")
     print()
     
     c = int(input("Enter Choice: "))
@@ -36,9 +40,39 @@ def main(a,b):
     elif c==4:
       print("Division of",a,"and",b,"is: ",a/b)
       
-    elif c==5:
+    elif c==6:
         print("Thankyou, Have a great Day :))")
+    
+    elif c==5:
+      print("**********TRIGONOMETRIC CALCULATOR**********")
+      x=math.pi
+      print("1. sin \n2. cos \n3. tan \n4. cosec \n5. sec \n6. cot")
+      c=int(input("Enter the value of c : "))
+      print("\nNumerator value is:",a)
+      print("Denominator is:",b)
       
+      if c==1:
+          sin=math.sin(a*x/b)
+          print(format(sin,'.2f'))
+      elif c==2:
+        cos=math.cos(a*x/b)
+        print(format(cos,'.2f'))
+    
+      elif c==3:
+        tan=math.tan(a*x/b)
+        print(format(tan,'.2f'))
+      elif c==4:
+         cosec=math.cosec(a*x/b)
+         print(format(cosec,'.2f'))
+      elif c==5:
+         sec=math.sec(a*x/b)
+         print(format(sec,'.2f'))
+      elif c==6:
+        cot=math.cot(a*x/b)
+        print(format(cot,'.2f'))
+      else:
+        print("Invalid Option: ")
+
 print(main(a,b))
 print()
 
