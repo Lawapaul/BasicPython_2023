@@ -13,4 +13,3 @@ for i in range(len(lst)):
     lst1.append(c)
 
 print(lst1)
-
