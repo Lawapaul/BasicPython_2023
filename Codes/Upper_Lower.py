@@ -1,18 +1,14 @@
-"""Write a program that accepts a sentence and calculate the number of upper case letters and lower case letters.
-Suppose the following input is supplied to the program:
-Hello world!
-Then, the output should be:
-UPPER CASE 1
-LOWER CASE 9
-"""
+"""Find the number of occurrences of a lower case and upper case characters
+in a string"""
+
 a=input()
 count=0
 count1=0
 for i in a:
-    if i.isupper():
+    if i.islower():
         count+=1
-    elif i.islower():
+    elif i.isupper():
         count1+=1
+    
 
-print("UPPER CASE:",count)
-print("LOWER CASE:",count1)
+print(count,count1)

@@ -1,4 +1,7 @@
 
+def main():
+    return "Hello World"
+
 while True:
     a=input("Enter Username: ")
     if a=="admin":
@@ -6,10 +9,8 @@ while True:
         if b=="test":
             
             
-            """Hello Everyone, I hope you find my module interesting and helpful. 
-               Start writing your code from here.......
-               !!!!!!!!Please enter break at the end of the code!!!!!!!
-            """
+            print(main())
+            break
             
         
         else:

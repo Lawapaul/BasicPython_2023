@@ -38,15 +38,16 @@ print("Caffeinated Drinks are:",cou)
 print("Non Caffeinated Drinks are:",co)
 
 lst=[]
-lst2=[]
-for i in range(len(drinks)):
-    c=(drinks[i]['calories'])
-    d=(drinks[i]["number_consumed"])
-    lst.append(c)
-    lst2.append(d)
-    
+for i in drinks:
+    d=i["calories"]
+    lst.append(d)
 
-print("Maximum calorie drink:",max(lst))
-print("Least consumed drink:",min(lst2))
-print("Average Calories:",coun/len(drinks))
+a_min=min(lst)
+a_max=max(lst)
+for i in drinks:
+    if i["calories"]==a_max:
+        print("Max Calory Drink:",i["type"])
+    if i["calories"]==a_min:
+        print("Least Calory Drink:",i["type"])
 
+print("Average Calories:",sum(lst)/len(lst))
