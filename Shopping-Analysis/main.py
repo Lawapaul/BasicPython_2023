@@ -4,7 +4,7 @@ for i in range(a):
     key=input("Enter ID: ")
     value=int(input("Enter Value: "))
     dict1[key]=value
-    
+
 lst=[]
 b=int(input("No of customers who shopped: "))
 for i in range(b):
@@ -31,9 +31,9 @@ for i in lst:
 a=set(lst2)
 b=set(lst3)
 union=a.union(b)
-lt=set(lst)
+lt=set(dict1)
 diff=set(lst).difference(union)
 print("Women ID:",b)
 print("Male ID",a)
-print("Remaining ID:",diff)
+print("Neither Women Nor Men:",diff)
 
