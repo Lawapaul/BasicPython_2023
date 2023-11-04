@@ -29,8 +29,8 @@ def main(l,lst,lst3):
         for j in range(len(lst3)):
             if i==j:
                 l.append(lst[i]+lst3[j])
-    return l
-print(main(l,lst,lst3))
+    print(*l)
+main(l,lst,lst3)
 
 l1=[]
 def main2(l1,lst2,lst4):
@@ -38,6 +38,6 @@ def main2(l1,lst2,lst4):
      for j in range(len(lst4)):
          if i==j:
              l1.append(lst2[i]+lst4[j])
-    return l1
+    print(*l1)
     
-print(main2(l1,lst2,lst4))
+main(l1,lst2,lst4)
