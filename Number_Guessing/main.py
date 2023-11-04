@@ -5,10 +5,10 @@ import random
 a=input("\nEnter First and Middle Name(if any): ")
 b=input("Enter Surname: ")
 c=input("Enter Username: ")
-print("-"*60)
-print("\n               T I M E   P A S S    G A M E          ")
+print("-"*40)
+print("\n               S T E L L A           ")
 print()
-print("-"*60)
+print("-"*40)
 
 def main(a,b,c):
     print()
