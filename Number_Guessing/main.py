@@ -24,8 +24,7 @@ def main(a,b,c):
         print("Range:",d[0],"-",d[1])
         c=d
 
-    main=random.randint(c[0],c[1])   
-    print(main)
+    main=random.randint(c[0],c[1]) 
     print()
     print("Random Number Generating......")
     print("Random Number Generated!!!")
