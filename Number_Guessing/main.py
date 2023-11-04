@@ -84,7 +84,8 @@ main(a,b,c)
 while True:
     ch=input("Do you wish to continue (y/n): ")
     if ch=="n" or ch=="N":
-        print("Thankyou. Have a great day ahead ^_^")    
+        print("Thankyou. Have a great day ahead ^_^")
+        print() 
         break
     else:
         main(a,b,c)
