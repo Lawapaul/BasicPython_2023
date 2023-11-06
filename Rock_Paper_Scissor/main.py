@@ -13,7 +13,7 @@ def main():
     count=0
     count1=0
     for i in range(a):
-        main=random.randint(1,4)
+        main=random.randint(1,3)
         compu=""
         if main==3:
             compu="rock"
@@ -22,7 +22,6 @@ def main():
         elif main==1:
             compu="scissor"
         inpu=input("\nRock\nPaper\nScissor\nEnter Your Choice: ")
-        inpu.lower()
         if compu=="rock":
             if compu=="rock" and inpu.lower=="paper":
                 print("You Won. Congratulations!!!")    
@@ -35,23 +34,23 @@ def main():
             else:
                 print("Invalid Input. Try again!")
         elif compu=="paper":
-            if compu=="paper" and inpu=="rock":
+            if compu=="paper" and inpu.lower()=="rock":
                 print("You Loss. Better Luck Next Time!!!")
                 count1+=1
-            elif compu=="paper" and inpu=="scissor":
+            elif compu=="paper" and inpu.lower()=="scissor":
                 print("You won. Congratulations!!!")
                 count+=1
-            elif compu=="paper" and inpu=="paper":
+            elif compu=="paper" and inpu.lower()=="paper":
                 print("Tie. Try again!")
             else:
                 print("Invalid Input. Try again!")
         elif compu=="scissor":
-            if compu=="scissor" and inpu=="rock":
+            if compu=="scissor" and inpu.lower()=="rock":
                 print("You Won. Congratulations!!!!")
                 count=+1
-            elif compu=="scissor" and inpu=="paper":
+            elif compu=="scissor" and inpu.lower()=="paper":
                 print("You loss. Better Luck next Time!!!")
-            elif compu=="scissor" and inpu=="scissor":
+            elif compu=="scissor" and inpu.lower()=="scissor":
                 print("Tie. Try again!")
             else:
                 print("Invalid Input. Try Again!")
