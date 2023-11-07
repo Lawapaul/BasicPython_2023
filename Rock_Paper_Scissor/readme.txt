@@ -3,7 +3,7 @@ H E L L O   E V E R Y O N E !!
 ---------------------------------
 
 Welcome to my page! 
-Hope you all are doing well. I am exicted to announce that I have created my very Second own game 
+Hope you all are doing well. I am exicted to announce that I have created another game 
 which plays rock paper scissor with user.
 
 
