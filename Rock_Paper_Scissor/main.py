@@ -21,36 +21,37 @@ def main():
             compu="paper"
         elif main==1:
             compu="scissor"
-        inpu=input("\nRock\nPaper\nScissor\nEnter Your Choice: ")
+        inpu=int(input("\n1. Rock\n2. Paper\n3. Scissor\nEnter Your Choice: "))
         if compu=="rock":
-            if compu=="rock" and inpu.lower=="paper":
+            if compu=="rock" and inpu==2:
                 print("You Won. Congratulations!!!")    
                 count+=1
-            elif compu=="rock" and inpu.lower=="scissor":
+            elif compu=="rock" and inpu==3:
                 print("You Lost. Try Again!")
                 count1+=1
-            elif compu=="rock" and inpu.lower()=="rock":
+            elif compu=="rock" and inpu==1:
                 print("Tie. Try Again")
             else:
                 print("Invalid Input. Try again!")
         elif compu=="paper":
-            if compu=="paper" and inpu.lower()=="rock":
+            if compu=="paper" and inpu==1:
                 print("You Loss. Better Luck Next Time!!!")
                 count1+=1
-            elif compu=="paper" and inpu.lower()=="scissor":
+            elif compu=="paper" and inpu==3:
                 print("You won. Congratulations!!!")
                 count+=1
-            elif compu=="paper" and inpu.lower()=="paper":
+            elif compu=="paper" and inpu==2:
                 print("Tie. Try again!")
             else:
                 print("Invalid Input. Try again!")
         elif compu=="scissor":
-            if compu=="scissor" and inpu.lower()=="rock":
+            if compu=="scissor" and inpu==1:
                 print("You Won. Congratulations!!!!")
                 count=+1
-            elif compu=="scissor" and inpu.lower()=="paper":
+            elif compu=="scissor" and inpu==2:
                 print("You loss. Better Luck next Time!!!")
-            elif compu=="scissor" and inpu.lower()=="scissor":
+                count1+=1
+            elif compu=="scissor" and inpu==3:
                 print("Tie. Try again!")
             else:
                 print("Invalid Input. Try Again!")
