@@ -2,17 +2,17 @@
 
 a=input("\nEnter First and Middle Name(if any): ")
 b=input("Enter Surname: ")
-c=input("Enter Username: ")
+c=input("Enter Player 1 Name: ")
+d=input("Enter Player 2 Name: ")
 print("-"*50)
 print("\n               M A S T E R M I N D             ")
 print()
 print("-"*50)
 
-def main(a,b,c):
+def main(a,b,c,d):
     print()
     print()
     print("*","Welcome",a,b,"*")
-    print("*","Username",c,"*")
     print()
     count=0
     person1=input("Enter Number: ")
@@ -21,7 +21,7 @@ def main(a,b,c):
         person2=input("Player 1 Guess: ")
         if person2==person1:
             print()
-            print("You Guessed Right. Player 2 chance")
+            print("You Guessed Right. Player 2 Chance")
             break
         else:
             count+=1
@@ -65,14 +65,14 @@ def main(a,b,c):
             continue
     print()
     if count>count1:
-        print("Player 2 is the Mastermind!!!!!")
+        print(d,"is the Mastermind!!!!!")
     elif count<count1:
-        print("Player 1 is the Mastermind!!!!!")
+        print(c,"Player 1 is the Mastermind!!!!!")
     elif count==count1:
-        print("Match Tied.Better Luck Next Time!!!")
+        print("Match Tied. Better Luck Next Time!!!")
         
     
-main(a,b,c)
+main(a,b,c,d)
 
 while True:
     ch=input("Do you wish to continue (y/n): ")
@@ -80,4 +80,5 @@ while True:
         print("Thankyou! Have a great day :) ")
         break
     else:
-        main(a,b,c)
+        main(a,b,c,d)
+        
