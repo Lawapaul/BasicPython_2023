@@ -1,4 +1,4 @@
-
+from getpass import getpass
 
 a=input("\nEnter First and Middle Name(if any): ")
 b=input("Enter Surname: ")
@@ -15,7 +15,7 @@ def main(a,b,c,d):
     print("*","Welcome",a,b,"*")
     print()
     count=0
-    person1=input("Enter Number: ")
+    person1=getpass("Enter Number: ")
     print("Number Encoded:",len(person1)*"*")
     while True:
         person2=input("Player 1 Guess: ")
@@ -39,7 +39,7 @@ def main(a,b,c,d):
             continue
     print()
 
-    perso=input("Next player enter Number: ")
+    perso=getpass("Next player enter Number: ")
     print("Number Encoded:",len(perso)*"*")
     count1=0
     while True:
