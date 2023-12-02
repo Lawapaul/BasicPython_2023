@@ -19,7 +19,10 @@ def main(a,b,c,d):
     print("Number Encoded:",len(person1)*"*")
     while True:
         person2=input("Player 1 Guess: ")
-        if person2==person1:
+        if len(person1)!=len(person2):
+            print("Invalid Length! Try again")
+            continue
+        elif person2==person1:
             print()
             print("You Guessed Right. Player 2 Chance")
             break
@@ -44,6 +47,8 @@ def main(a,b,c,d):
     count1=0
     while True:
         person2=input("Player 2 Guess: ")
+        if len(perso)!=len(person2):
+            print("Invalid Length! Try Again.")
         if person2==perso:
             print()
             print("Chance Over!!!!")
